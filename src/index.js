@@ -14,8 +14,6 @@ const head = (
     </nav>
     
 )
-/*document.getElementById("app").append(JSON.stringify(head))
-*/
 ReactDOM.render(
     head,
     document.getElementById("app")
