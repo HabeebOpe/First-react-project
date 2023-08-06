@@ -1,20 +1,59 @@
 import React from "react";
 import ReactDOM from "react-dom";
+//import "./app.css";
 
-const head = (
-    <nav>
-        <h1>My name Habeebullah and this is my first react project</h1>
-        <h2>Fun facts about react</h2>
+function Nav() {
+  return(
+      <nav className="nav">
+        <img src="./react.png" />
         <ul>
-            <li>First released in 2013</li>
-            <li>Created by Jordan Walke</li>
-            <li>Maintained by Facebook</li>
-            <li>A Javascript library</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Donate</li>
         </ul>
-    </nav>
-    
-)
+      </nav>
+  )
+}
+function Header() {
+  return(
+      <header>
+        <h1>Prophets you should learn from</h1>
+      </header>
+  )
+}
+function MainBody() {
+  return(
+      <section>
+        <ul>
+            <li>Prophet Muhammad</li>
+            <li>Prophet Isa</li>
+            <li>Prophet Yusuf</li>
+            <li>Prophet Musa</li>
+            <li>Prophet Yaqub</li>
+        </ul>
+      </section>
+  )
+}
+function Footer() {
+  return(
+      <footer>
+        <small>©2023 Habeebullah All Rights Reserved </small>
+      </footer>
+  )
+}
+function Page() {
+  return(
+      <div>
+        <Nav />
+        <Header /> 
+        <MainBody />
+        <Footer />
+      </div>
+  )
+}
 ReactDOM.render(
-    head,
-    document.getElementById("app")
+    <Page />,
+    document.getElementById('app')
 )
+
+
